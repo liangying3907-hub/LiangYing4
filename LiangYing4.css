@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: rgb(12, 30, 54);
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    background-color: rgb(144, 170, 203);
+    height: 3px;
+    width: 80px;
+    border-radius: 10px;
+    margin: 1.5vh auto 1vh;
+}
+
+section,
+footer {
+    padding: 2vh 5vh 2vh;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: rgba(133, 162, 200, 0.713);
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+
+    h1 {
+        position: absolute;
+        left: 7vh;
+        line-height: 7vh;
+    }
+
+    h1::after {
+        display: none;
+    }
+
+    ul {
+        position: absolute;
+        top: 0;
+        line-height: 7vh;
+        right: 3vh;
+    }
+
+    li {
+        display: inline;
+        margin-right: 4vh;
+    }
+
+    a:hover{
+        color: aliceblue;
+    }
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 5vh 0;
+
+    h1::after {
+        display: none;
+    }
+}
+
+#about {
+    div {
+        display: flex;
+        justify-content: center;
+        line-height: 2;
+        text-align: center;
+        gap: 5vh;
+        padding-top: 2vh;
+    }
+
+    ul {
+        flex: 25;
+        background-color: rgb(195, 209, 227);
+        border-radius: 15px;
+        padding: 0 0 1vh 0;
+        transition: transform 0.3s cubic-bezier(0.15, 0.5, 0.25, 0.5);
+    }
+
+    ul:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 0 7px rgb(12, 30, 54);
+        color: rgb(12, 30, 54);
+        background-color: aliceblue;
+
+    }
+
+    h2 {
+        background-color: rgb(12, 30, 54);
+        color: aliceblue;
+        padding: 0.5vh;
+        margin-bottom: 1vh;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+#education {
+    .box {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        margin-bottom: 3vh;
+    }
+
+    .time {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        margin-top: 1vh;
+    }
+}
+
+#skills {
+    text-align: center;
+
+    ul {
+        display: flex;
+        gap: 5vh;
+        margin-bottom: 3vh;
+        margin: 2vh 0 2vh;
+    }
+
+    li {
+        background-color: rgb(12, 30, 54);
+        color: aliceblue;
+        flex: 10;
+        padding: 2vh;
+        border-radius: 30px;
+        transition: transform 0.3s cubic-bezier(0.15, 0.5, 0.25, 0.5);
+    }
+
+    li:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 0 7px rgb(12, 30, 54);
+        color: rgb(12, 30, 54);
+        background-color: aliceblue;
+    }
+}
+
+#goals {
+    text-align: center;
+
+    p {
+        margin-bottom: 2vh;
+    }
+}
+
+#contact {
+    padding: 0;
+    margin-bottom: 2vh;
+    background-color: rgb(12, 30, 54);
+
+    h1::after {
+        display: none;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 5vh;
+    }
+
+    a {
+        border: 2px solid rgba(255, 255, 255, 0);
+        text-align: center;
+        border-radius: 15px;
+        padding: 1vh 2vh 1vh;
+        transition: transform 0.3s cubic-bezier(0.15, 0.5, 0.25, 0.5);
+    }
+
+    a:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 0 7px aliceblue;
+        color: rgb(12, 30, 54);
+        background-color: aliceblue;
+    }
+}
+
+footer {
+    background-color: rgb(12, 30, 54);
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1,
+    a,
+    p {
+        color: aliceblue;
+    }
+
+    p{
+        margin-top: 2vh;
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        h1 {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            left: 0;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    section {
+        font-size: 0.9rem;
+    }
+
+    #home {
+        font-size: 1em;
+    }
+
+    #about {
+        div {
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+
+    #education {
+        .time {
+            flex-direction: column;
+        }
+    }
+
+    #skills {
+        ul {
+            gap: 1vh;
+        }
+    }
+}
+
