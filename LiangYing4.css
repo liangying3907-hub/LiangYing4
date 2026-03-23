@@ -53,6 +53,7 @@ header {
     font-weight: bold;
     background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yNV9kYXJrX2JsdWVfd2FsbHBhcGVyX29mX3RoZV9tb29uX21lcmN1cnlfZGFya19jNTAzNmE0OC0zZjg1LTQwMjItYTA1Ni1lYjQ5NDEwODU4NjRfMS5qcGc.jpg);
     background-size: cover;
+    text-transform: uppercase;
 
     h1{
         display: none;
@@ -196,7 +197,7 @@ header {
     padding: 0;
     margin-bottom: 2vh;
     background-color: rgb(12, 30, 54);
-    left: 0;
+    margin-left: 0;
 
     h1::after {
         display: none;
